@@ -3606,9 +3606,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>325142030.39823997</real>
-		<string>{625, 2669}</string>
-		<string>{2280, 0}</string>
+		<real>325143240.63106102</real>
+		<string>{1198, 2942}</string>
+		<string>{3437, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4860,7 +4860,7 @@
 				<integer>432</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>325142001.72766602</real>
+			<real>325143169.01166201</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -4871,7 +4871,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 5:13 PM</string>
+		<string>Today at 5:32 PM</string>
 		<integer>106</integer>
 		<dict>
 			<key>$class</key>
@@ -5394,7 +5394,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>468</integer>
+					<integer>38</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5659,7 +5659,7 @@
 			</array>
 		</dict>
 		<string>dictionary</string>
-		<string>labelFirstLabel</string>
+		<string>__</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7711,7 +7711,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>325142030.40111202</real>
+		<real>325143240.63491303</real>
 		<string>{0, 1846}</string>
 		<string>{1047, 0}</string>
 		<string>-viewDidLoad</string>
@@ -7999,10 +7999,10 @@
 				</dict>
 			</array>
 		</dict>
-		<real>325142030.400985</real>
-		<string>{625, 2669}</string>
-		<string>{2280, 0}</string>
-		<string>-viewDidLoad</string>
+		<real>325143240.63475001</real>
+		<string>{1198, 2942}</string>
+		<string>{3437, 0}</string>
+		<string>-swipeGestureOccurred:</string>
 		<dict>
 			<key>$class</key>
 			<dict>

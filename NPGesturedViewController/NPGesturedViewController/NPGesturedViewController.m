@@ -79,7 +79,7 @@
     
     BOOL shouldConfigureView = NO;
     
-    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
         NSLog(@"Swiped Left. Going forwards");
         if (currentIndex + 1 < [self.arrayOfDatasourceItems count]) {
             currentIndex += 1;
