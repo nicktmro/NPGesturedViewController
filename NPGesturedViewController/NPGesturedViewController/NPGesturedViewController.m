@@ -99,12 +99,6 @@
     else {
         //-- shake the UI a bit
     }
-    
-    //    [UIView beginAnimations:nil context:NULL];
-    //    [UIView setAnimationDuration:0.55];
-    //    imageView.alpha = 0.0;
-    //    imageView.center = location;
-    //    [UIView commitAnimations];
 }
 
 #pragma mark - Abstract methods - 
