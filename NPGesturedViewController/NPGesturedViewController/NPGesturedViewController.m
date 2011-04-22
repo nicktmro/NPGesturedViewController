@@ -7,6 +7,7 @@
 //
 
 #import "NPGesturedViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface NPGesturedViewController () 
 - (void)swipeGestureOccurred:(UISwipeGestureRecognizer *)recognizer;
@@ -50,13 +51,13 @@
                                                                                                  action:@selector(swipeGestureOccurred:)];
     swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeGestureRecognizer];
+    [swipeGestureRecognizer release];
     
     //-- please note that Apple does not respect the contract in their header file for the direction property. Sadly only one direction can be used per gesture recogniser
     swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
                                                                        action:@selector(swipeGestureOccurred:)];
     swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
-    [self.view addGestureRecognizer:swipeGestureRecognizer];
-    
+    [self.view addGestureRecognizer:swipeGestureRecognizer];    
     [swipeGestureRecognizer release];
     
 }
@@ -98,6 +99,15 @@
     }
     else {
         //-- shake the UI a bit
+        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+        [animation setDuration:0.10];
+        [animation setRepeatCount:2];
+        [animation setAutoreverses:YES];
+        [animation setFromValue:[NSValue valueWithCGPoint:CGPointMake([self.view center].x - 20.0f, [self.view center].y)]];
+        [animation setToValue:[NSValue valueWithCGPoint:
+                               CGPointMake([self.view center].x + 20.0f, [self.view center].y)]];
+        [[self.view layer] addAnimation:animation forKey:@"position"];
+
     }
 }
 
